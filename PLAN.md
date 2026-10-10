@@ -20,12 +20,12 @@ App de cámara (foto y video) donde el usuario define un **álbum activo** antes
 - [ ] Probar la cámara básica en un dispositivo real
 
 ## Fase 1: MVP (1–2 días)
-- [ ] Permisos: cámara, micrófono, galería (iOS: acceso de solo agregar)
-- [ ] Captura de foto y grabación de video
-- [ ] Guardado en el álbum activo (crear álbum si no existe)
-- [ ] Chip de álbum activo en la parte superior de la cámara
-- [ ] Selector de álbumes (modal): listar, elegir y crear nuevo sin salir de la cámara
-- [ ] Recordar el último álbum usado al reabrir la app
+- [x] Permisos: cámara, micrófono, galería (iOS: acceso de solo agregar) — código escrito, sin probar en dispositivo; la galería pide acceso completo (hace falta leer para listar/verificar álbumes)
+- [x] Captura de foto y grabación de video — código escrito, sin probar en dispositivo
+- [x] Guardado en el álbum activo (crear álbum si no existe) — código escrito, sin probar en dispositivo
+- [x] Chip de álbum activo en la parte superior de la cámara — código escrito, sin probar en dispositivo
+- [x] Selector de álbumes (modal): listar, elegir y crear nuevo sin salir de la cámara — código escrito, sin probar en dispositivo
+- [x] Recordar el último álbum usado al reabrir la app — código escrito, sin probar en dispositivo
 
 **Criterio de éxito:** abrir la app, elegir o crear un álbum, hacer 5 fotos y 1 video, y verlos todos en ese álbum en la galería del teléfono.
 
