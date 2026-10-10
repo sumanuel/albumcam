@@ -1,15 +1,36 @@
-{
+﻿{
   "expo": {
-    "name": "albumcam",
+    "name": "AlbumCam",
     "slug": "albumcam",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "AlbumCam necesita la cámara para tomar fotos y videos.",
+          "microphonePermission": "AlbumCam necesita el micrófono para grabar audio en los videos.",
+          "recordAudioAndroid": true
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "AlbumCam necesita acceso a tus álbumes para organizar las capturas.",
+          "savePhotosPermission": "AlbumCam guarda tus fotos y videos en el álbum activo.",
+          "isAccessMediaLocationEnabled": false
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jesusprada.albumcam"
     },
     "android": {
+      "package": "com.jesusprada.albumcam",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
